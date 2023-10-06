@@ -16,5 +16,5 @@ export default function cloudflareLoader({
   quality: number;
 }): string {
   const params = [`width=${width}`, `quality=${quality || 75}`, 'format=auto'];
-  return `https://www.cloudflare.com/cdn-cgi/image/${params.join(',')}/${src}`;
+  return `https://assets.codepen.io/cdn-cgi/image/${params.join(',')}/${src}`;
 }
